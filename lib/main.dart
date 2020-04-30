@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
+import 'package:device_simulator/device_simulator.dart';
+
+const bool debugEnableDeviceSimulator = true;
 
 void main() => runApp(MyApp());
 
@@ -11,7 +14,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: DeviceSimulator(
+        brightness: Brightness.dark,
+        enable: debugEnableDeviceSimulator,
+        child: MyHomePage(title: 'Flutter Demo Home Page')
+      ),
     );
   }
 }
