@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_workshop/widget/app_drawer.dart';
+import 'package:flutter_workshop/custom_widgets/app_drawer.dart';
 
 class ProductDetail extends StatelessWidget {
   static const routeName = '/product-detail';

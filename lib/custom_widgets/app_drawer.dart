@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_workshop/screen/product_screen.dart';
-import 'package:flutter_workshop/screen/random_words_screen.dart';
+import 'package:flutter_workshop/screens/product_screen.dart';
+import 'package:flutter_workshop/screens/random_words_screen.dart';
 
 class AppDrawer extends StatelessWidget {
   @override
