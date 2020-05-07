@@ -21,20 +21,33 @@ class ProductDetail extends StatelessWidget {
         ]),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Text(
             productName,
             style: TextStyle(fontSize: 30),
           ),
-          SizedBox(height: 30,),
+          SizedBox(
+            height: 30,
+          ),
           RaisedButton(
-            child: Text('Back to previous!'),
-            onPressed: (){
-              Navigator.of(context).pop('Back from button!');
-            }
-          )
+              child: FlatButton.icon(
+                label: Text(
+                  'Back Home',
+                  style: TextStyle(color: Colors.white),
+                ),
+                color: Colors.black,
+                icon: Icon(
+                  Icons.home,
+                  color: Colors.white,
+                ),
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+              ),
+              color: Colors.black,
+              onPressed: () {})
         ],
       )),
       drawer: AppDrawer(),

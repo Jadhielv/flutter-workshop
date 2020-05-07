@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_workshop/screens/home_demo_screen.dart';
+import 'package:flutter_workshop/screens/home_screen.dart';
 import 'package:flutter_workshop/screens/product_screen.dart';
 import 'package:flutter_workshop/screens/random_words_screen.dart';
+import 'package:flutter_workshop/screens/about_screen.dart';
 
 class AppDrawer extends StatelessWidget {
   @override
@@ -25,6 +28,18 @@ class AppDrawer extends StatelessWidget {
           Divider(),
           ListTile(
             leading: Icon(
+              Icons.home,
+              color: Colors.black,
+            ),
+            title: Text(
+              'Home',
+            ),
+            onTap: () {
+              Navigator.of(context).pushReplacementNamed(HomeScreen.routeName);
+            },
+          ),
+          ListTile(
+            leading: Icon(
               Icons.shopping_basket,
               color: Colors.black,
             ),
@@ -44,9 +59,40 @@ class AppDrawer extends StatelessWidget {
               'Name Generator',
             ),
             onTap: () {
-              Navigator.of(context).pushNamed(RandomWords.routeName);
+              Navigator.of(context).pushAndRemoveUntil(
+                  MaterialPageRoute(
+                      builder: (BuildContext context) => RandomWords()),
+                  ModalRoute.withName(RandomWords.routeName));
             },
-          )
+          ),
+          ListTile(
+            leading: Icon(
+              Icons.info,
+              color: Colors.black,
+            ),
+            title: Text(
+              'Home Demo',
+            ),
+            onTap: () {
+              Navigator.of(context).pushNamed(HomeDemo.routeName);
+            },
+          ),
+          Expanded(
+              child: Align(
+            alignment: Alignment.bottomCenter,
+            child: ListTile(
+              leading: Icon(
+                Icons.live_help,
+                color: Colors.black,
+              ),
+              title: Text(
+                'About',
+              ),
+              onTap: () {
+                Navigator.of(context).popAndPushNamed(AboutScreen.routeName);
+              },
+            ),
+          ))
         ],
       ),
     );

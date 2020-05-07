@@ -9,6 +9,7 @@ class ProductScreen extends StatelessWidget {
     Product(id: '1', name: 'Adidas Shoes', price: 99.98),
     Product(id: '2', name: 'Nike Shoes', price: 129.98),
     Product(id: '3', name: 'New Balance Shoes', price: 399.98),
+    Product(id: '4', name: 'Jordan Shoes', price: 850.98),
   ];
 
   @override

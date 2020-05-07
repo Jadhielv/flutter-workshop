@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_workshop/screens/about_screen.dart';
+import 'package:flutter_workshop/screens/home_demo_screen.dart';
 import 'package:flutter_workshop/screens/home_screen.dart';
 import 'package:flutter_workshop/screens/product_detail_screen.dart';
 import 'package:flutter_workshop/screens/product_screen.dart';
@@ -15,7 +17,9 @@ class MyApp extends StatelessWidget {
         HomeScreen.routeName: (context) => HomeScreen(),
         ProductScreen.routeName: (context) => ProductScreen(),
         ProductDetail.routeName: (context) => ProductDetail(),
-        RandomWords.routeName: (context) => RandomWords()
+        RandomWords.routeName: (context) => RandomWords(),
+        HomeDemo.routeName: (context) => HomeDemo(),
+        AboutScreen.routeName: (context) => AboutScreen()
       },
     );
   }

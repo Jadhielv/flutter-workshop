@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
+import 'package:flutter_workshop/custom_widgets/app_drawer.dart';
 
 class RandomWordsState extends State<RandomWords> {
   final _suggestions = <WordPair>[];
@@ -11,6 +12,9 @@ class RandomWordsState extends State<RandomWords> {
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: Text('Startup Name Generator'),
+      ),
+      drawer: Drawer(
+        child: AppDrawer(),
       ),
       body: _buildSuggestions(),
     );
