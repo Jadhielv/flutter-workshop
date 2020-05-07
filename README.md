@@ -1,16 +1,42 @@
-# flutter_workshop
+# Flutter Workshop
 
 A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a starting point for a Flutter application, sponsored by [GDG Santo Domingo](https://github.com/gdgsantodomingo) community.
 
-A few resources to get you started if this is your first Flutter project:
+## How to Use
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+**Step 1:**
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Download or clone this repo by using the link below:
+
+```
+https://github.com/Jadhielv/flutter-workshop.git
+```
+
+**Step 2:**
+
+Go to project root and execute the following command in console to get the required dependencies: 
+
+``` 
+flutter pub get 
+```
+
+**Step 3:**
+
+Run the project: 
+
+``` 
+flutter run
+```
+
+## Workshop Features:
+
+* IDE DevTools
+* Project Structure
+* Emulators (iOS simulator, Android emulator)
+* Dart Language
+* Routing & Navigation
+
