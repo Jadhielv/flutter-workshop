@@ -32,6 +32,14 @@ Run the project:
 flutter run
 ```
 
+**Step 4:**
+
+To serve your app from localhost in Chrome, execute the following command in console: 
+
+``` 
+flutter run -d chrome
+```
+
 ## Workshop Features:
 
 * IDE DevTools
