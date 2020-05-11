@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
+import 'package:flutter_workshop/custom_widgets/app_drawer.dart';
 
-class HomeDemo extends StatefulWidget {
-  static const routeName = '/home-demo';
+class HomeDemoScreen extends StatefulWidget {
+  static const routeName = '/words-counter';
 
   @override
   _HomeDemoState createState() => _HomeDemoState();
 }
 
-class _HomeDemoState extends State<HomeDemo> {
+class _HomeDemoState extends State<HomeDemoScreen> {
   int _counter = 0;
 
   void _incrementCounter() {
@@ -23,7 +24,7 @@ class _HomeDemoState extends State<HomeDemo> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Home Demo"),
+        title: Text("Words Counter"),
         backgroundColor: Colors.black,
       ),
       body: Center(
@@ -50,6 +51,9 @@ class _HomeDemoState extends State<HomeDemo> {
         tooltip: 'Increment',
         child: Icon(Icons.add),
         backgroundColor: Colors.black,
+      ),
+      drawer: Drawer(
+        child: AppDrawer(),
       ),
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_workshop/custom_widgets/app_drawer.dart';
 import 'package:flutter_workshop/models/product.dart';
 import 'product_detail_screen.dart';
 
@@ -31,13 +32,21 @@ class ProductScreen extends StatelessWidget {
                 trailing: Text(productList[index].price.toStringAsFixed(2)),
                 onTap: () {
                   Navigator.of(context)
-                      .pushReplacementNamed(ProductDetail.routeName,
-                          arguments: productList[index].name)
+                      .pushAndRemoveUntil(
+                          MaterialPageRoute(
+                              builder: (BuildContext context) =>
+                                  ProductDetailScreen(),
+                              settings: RouteSettings(
+                                  arguments: productList[index].name)),
+                          ModalRoute.withName(ProductDetailScreen.routeName))
                       .then((response) {
                     print(response);
                   });
                 },
               )),
+      drawer: Drawer(
+        child: AppDrawer(),
+      ),
     );
   }
 }

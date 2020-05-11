@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_workshop/custom_widgets/app_drawer.dart';
+import 'package:flutter_workshop/screens/home_screen.dart';
 
-class ProductDetail extends StatelessWidget {
+class ProductDetailScreen extends StatelessWidget {
   static const routeName = '/product-detail';
 
   @override
@@ -43,7 +44,10 @@ class ProductDetail extends StatelessWidget {
                   color: Colors.white,
                 ),
                 onPressed: () {
-                  Navigator.of(context).pop();
+                  Navigator.of(context).pushAndRemoveUntil(
+                  MaterialPageRoute(
+                      builder: (BuildContext context) => HomeScreen()),
+                  ModalRoute.withName(HomeScreen.routeName));
                 },
               ),
               color: Colors.black,

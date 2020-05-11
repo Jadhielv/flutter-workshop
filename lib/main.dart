@@ -5,6 +5,7 @@ import 'package:flutter_workshop/screens/home_screen.dart';
 import 'package:flutter_workshop/screens/product_detail_screen.dart';
 import 'package:flutter_workshop/screens/product_screen.dart';
 import 'package:flutter_workshop/screens/random_words_screen.dart';
+import 'package:device_simulator/device_simulator.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,11 +15,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: '/',
       routes: {
-        HomeScreen.routeName: (context) => HomeScreen(),
+        HomeScreen.routeName: (context) => DeviceSimulator(brightness: Brightness.dark, enable: true, child: HomeScreen()),
         ProductScreen.routeName: (context) => ProductScreen(),
-        ProductDetail.routeName: (context) => ProductDetail(),
-        RandomWords.routeName: (context) => RandomWords(),
-        HomeDemo.routeName: (context) => HomeDemo(),
+        ProductDetailScreen.routeName: (context) => ProductDetailScreen(),
+        RandomWordsScreen.routeName: (context) => RandomWordsScreen(),
+        HomeDemoScreen.routeName: (context) => HomeDemoScreen(),
         AboutScreen.routeName: (context) => AboutScreen()
       },
     );

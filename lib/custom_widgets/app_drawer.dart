@@ -35,7 +35,10 @@ class AppDrawer extends StatelessWidget {
               'Home',
             ),
             onTap: () {
-              Navigator.of(context).pushReplacementNamed(HomeScreen.routeName);
+              Navigator.of(context).pushAndRemoveUntil(
+                  MaterialPageRoute(
+                      builder: (BuildContext context) => HomeScreen()),
+                  ModalRoute.withName(HomeScreen.routeName));
             },
           ),
           ListTile(
@@ -47,7 +50,25 @@ class AppDrawer extends StatelessWidget {
               'My Products',
             ),
             onTap: () {
-              Navigator.of(context).pushNamed(ProductScreen.routeName);
+              Navigator.of(context).pushAndRemoveUntil(
+                  MaterialPageRoute(
+                      builder: (BuildContext context) => ProductScreen()),
+                  ModalRoute.withName(ProductScreen.routeName));
+            },
+          ),
+          ListTile(
+            leading: Icon(
+              Icons.info,
+              color: Colors.black,
+            ),
+            title: Text(
+              'Words Counter',
+            ),
+            onTap: () {
+              Navigator.of(context).pushAndRemoveUntil(
+                  MaterialPageRoute(
+                      builder: (BuildContext context) => HomeDemoScreen()),
+                  ModalRoute.withName(HomeDemoScreen.routeName));
             },
           ),
           ListTile(
@@ -61,20 +82,8 @@ class AppDrawer extends StatelessWidget {
             onTap: () {
               Navigator.of(context).pushAndRemoveUntil(
                   MaterialPageRoute(
-                      builder: (BuildContext context) => RandomWords()),
-                  ModalRoute.withName(RandomWords.routeName));
-            },
-          ),
-          ListTile(
-            leading: Icon(
-              Icons.info,
-              color: Colors.black,
-            ),
-            title: Text(
-              'Home Demo',
-            ),
-            onTap: () {
-              Navigator.of(context).pushNamed(HomeDemo.routeName);
+                      builder: (BuildContext context) => RandomWordsScreen()),
+                  ModalRoute.withName(RandomWordsScreen.routeName));
             },
           ),
           Expanded(
@@ -89,7 +98,10 @@ class AppDrawer extends StatelessWidget {
                 'About',
               ),
               onTap: () {
-                Navigator.of(context).popAndPushNamed(AboutScreen.routeName);
+                Navigator.of(context).pushAndRemoveUntil(
+                    MaterialPageRoute(
+                        builder: (BuildContext context) => AboutScreen()),
+                    ModalRoute.withName(AboutScreen.routeName));
               },
             ),
           ))

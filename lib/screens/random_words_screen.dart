@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 import 'package:flutter_workshop/custom_widgets/app_drawer.dart';
 
-class RandomWordsState extends State<RandomWords> {
+class RandomWordsState extends State<RandomWordsScreen> {
   final _suggestions = <WordPair>[];
   final _biggerFont = const TextStyle(fontSize: 18.0);
 
@@ -43,7 +43,7 @@ class RandomWordsState extends State<RandomWords> {
   }
 }
 
-class RandomWords extends StatefulWidget {
+class RandomWordsScreen extends StatefulWidget {
   static const routeName = '/random-words';
 
   @override
@@ -54,7 +54,7 @@ class ScrollListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: RandomWords(),
+      body: RandomWordsScreen(),
     );
   }
 }
