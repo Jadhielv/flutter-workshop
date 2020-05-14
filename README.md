@@ -6,7 +6,7 @@ A new Flutter project.
 
 This project is a starting point for a Flutter application, sponsored by [GDG Santo Domingo](https://github.com/gdgsantodomingo) community.
 
-## How to Use
+### How to Use
 
 **Step 1:**
 
@@ -40,11 +40,19 @@ To serve your app from localhost in Chrome, execute the following command in con
 flutter run -d chrome
 ```
 
-## Workshop Features:
+### Workshop Features:
 
 * IDE DevTools
 * Project Structure
 * Emulators (iOS simulator, Android emulator)
 * Dart Language
 * Routing & Navigation
+
+### Preview
+
+<div align="center">
+    <img width="260" height:"600" src="assets/ios.gif">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <img width="260" height:"600" src="assets/android.gif">
+</div>
 
