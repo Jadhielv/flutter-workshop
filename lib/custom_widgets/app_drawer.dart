@@ -4,6 +4,7 @@ import 'package:flutter_workshop/screens/home_screen.dart';
 import 'package:flutter_workshop/screens/product_screen.dart';
 import 'package:flutter_workshop/screens/random_words_screen.dart';
 import 'package:flutter_workshop/screens/about_screen.dart';
+import 'package:flutter_workshop/screens/unknown_screen.dart';
 
 class AppDrawer extends StatelessWidget {
   @override
@@ -39,6 +40,21 @@ class AppDrawer extends StatelessWidget {
                   MaterialPageRoute(
                       builder: (BuildContext context) => HomeScreen()),
                   ModalRoute.withName(HomeScreen.routeName));
+            },
+          ),
+          ListTile(
+            leading: Icon(
+              Icons.error_outline,
+              color: Colors.black,
+            ),
+            title: Text(
+              'Unknown',
+            ),
+            onTap: () {
+              Navigator.of(context).pushAndRemoveUntil(
+                  MaterialPageRoute(
+                      builder: (BuildContext context) => UnknownScreen()),
+                  ModalRoute.withName(UnknownScreen.routeName));
             },
           ),
           ListTile(

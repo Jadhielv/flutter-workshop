@@ -5,6 +5,7 @@ import 'package:flutter_workshop/screens/home_screen.dart';
 import 'package:flutter_workshop/screens/product_detail_screen.dart';
 import 'package:flutter_workshop/screens/product_screen.dart';
 import 'package:flutter_workshop/screens/random_words_screen.dart';
+import 'package:flutter_workshop/screens/unknown_screen.dart';
 import 'package:device_simulator/device_simulator.dart';
 
 void main() => runApp(MyApp());
@@ -13,15 +14,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: '/',
-      routes: {
-        HomeScreen.routeName: (context) => DeviceSimulator(brightness: Brightness.dark, enable: true, child: HomeScreen()),
-        ProductScreen.routeName: (context) => ProductScreen(),
-        ProductDetailScreen.routeName: (context) => ProductDetailScreen(),
-        RandomWordsScreen.routeName: (context) => RandomWordsScreen(),
-        HomeDemoScreen.routeName: (context) => HomeDemoScreen(),
-        AboutScreen.routeName: (context) => AboutScreen()
-      },
-    );
+        initialRoute: '/',
+        routes: {
+          HomeScreen.routeName: (_) => DeviceSimulator(
+              brightness: Brightness.dark, enable: true, child: HomeScreen()),
+          ProductScreen.routeName: (_) => ProductScreen(),
+          ProductDetailScreen.routeName: (_) => ProductDetailScreen(),
+          RandomWordsScreen.routeName: (_) => RandomWordsScreen(),
+          HomeDemoScreen.routeName: (_) => HomeDemoScreen(),
+          AboutScreen.routeName: (_) => AboutScreen()
+        },
+        onUnknownRoute: (_) =>
+            MaterialPageRoute(builder: (_) => UnknownScreen()));
   }
 }
