@@ -40,6 +40,14 @@ To serve your app from localhost in Chrome, execute the following command in con
 flutter run -d chrome
 ```
 
+### Preview
+
+<div align="center">
+    <img width="380" title="iPhone X" src="assets/ios.gif">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    <img width="380" title="Pixel 3 XL" src="assets/android.gif">
+</div>
+
 ### Workshop Features:
 
 * IDE DevTools
@@ -47,12 +55,3 @@ flutter run -d chrome
 * Emulators (iOS simulator, Android emulator)
 * Dart Language
 * Routing & Navigation
-
-### Preview
-
-<div align="center">
-    <img width="260" height:"600" src="assets/ios.gif">
-        &nbsp;&nbsp;&nbsp;&nbsp;
-    <img width="260" height:"600" src="assets/android.gif">
-</div>
-
