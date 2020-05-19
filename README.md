@@ -74,3 +74,6 @@ flutter run -d windows
 * Dart Language
 * Routing & Navigation
 * Web & Desktop Support
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
