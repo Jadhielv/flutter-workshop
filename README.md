@@ -16,6 +16,8 @@ Download or clone this repo by using the link below:
 https://github.com/Jadhielv/flutter-workshop.git
 ```
 
+<br/>
+
 **Step 2:**
 
 Go to project root and execute the following command in console to get the required dependencies: 
@@ -24,6 +26,8 @@ Go to project root and execute the following command in console to get the requi
 flutter pub get 
 ```
 
+<br/>
+
 **Step 3:**
 
 Run the project: 
@@ -31,6 +35,8 @@ Run the project:
 ``` 
 flutter run
 ```
+
+<br/>
 
 **Step 4:**
 
@@ -42,6 +48,8 @@ flutter run -d chrome
 
 **Note:** *If there aren’t any other connected devices, the -d chrome is optional.*
 
+<br/>
+
 **Step 5:**
 
 To launch your app from the command line, enter the following from the top of the package:
@@ -52,7 +60,11 @@ flutter run -d windows
 
 **Note:** *If there aren’t any other connected devices, the -d windows is optional.*
 
+<br/>
+
 ### Preview
+
+<br/>
 
 <div align="center">
     <img width="380" title="iPhone X" src="assets/ios.gif">
@@ -60,7 +72,7 @@ flutter run -d windows
     <img width="380" title="Pixel 3 XL" src="assets/android.gif">
 </div>
 
-### Workshop Features:
+## Workshop Features:
 
 * IDE DevTools
 * Project Structure
