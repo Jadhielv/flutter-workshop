@@ -34,11 +34,23 @@ flutter run
 
 **Step 4:**
 
-To serve your app from localhost in Chrome, execute the following command in console: 
+To serve your app from localhost in Chrome, enter the following from the top of the package: 
 
 ``` 
 flutter run -d chrome
 ```
+
+**Note:** *If there aren’t any other connected devices, the -d chrome is optional.*
+
+**Step 5:**
+
+To launch your app from the command line, enter the following from the top of the package:
+
+``` 
+flutter run -d windows
+```
+
+**Note:** *If there aren’t any other connected devices, the -d windows is optional.*
 
 ### Preview
 
@@ -55,3 +67,4 @@ flutter run -d chrome
 * Emulators (iOS simulator, Android emulator)
 * Dart Language
 * Routing & Navigation
+* Web & Desktop Support
