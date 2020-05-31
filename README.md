@@ -1,5 +1,11 @@
 # Flutter Workshop
 
+![GitHub repo size](https://img.shields.io/github/repo-size/jadhielv/flutter-workshop)
+![GitHub contributors](https://img.shields.io/github/contributors/jadhielv/flutter-workshop)
+![GitHub stars](https://img.shields.io/github/stars/jadhielv/flutter-workshop?style=social)
+![GitHub forks](https://img.shields.io/github/forks/jadhielv/flutter-workshop?style=social)
+![Twitter Follow](https://img.shields.io/twitter/follow/jadhielv?style=social)
+
 A new Flutter project.
 
 ## Getting Started
@@ -74,3 +80,12 @@ flutter run -d windows
 * Dart Language
 * Routing & Navigation
 * Web & Desktop Support
+
+## Contact
+
+If you want to contact me you can reach me at <jadhielv@gmail.com>
+
+## License
+<!--- If you're not sure which open license to use see https://choosealicense.com/--->
+
+This project uses the following license: [MIT](<https://choosealicense.com/licenses/mit/>)
