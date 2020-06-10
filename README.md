@@ -1,10 +1,9 @@
 # Flutter Workshop
 
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Jadhielv/flutter-workshop/blob/master/LICENSE)
 ![GitHub repo size](https://img.shields.io/github/repo-size/jadhielv/flutter-workshop)
-![GitHub contributors](https://img.shields.io/github/contributors/jadhielv/flutter-workshop)
 ![GitHub stars](https://img.shields.io/github/stars/jadhielv/flutter-workshop?style=social)
-![GitHub forks](https://img.shields.io/github/forks/jadhielv/flutter-workshop?style=social)
-![Twitter Follow](https://img.shields.io/twitter/follow/jadhielv?style=social)
+[![Twitter Follow](https://img.shields.io/twitter/follow/jadhielv?style=social)](https://twitter.com/intent/follow?screen_name=jadhielv)
 
 A new Flutter project.
 
