@@ -3,7 +3,6 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Jadhielv/flutter-workshop/blob/master/LICENSE)
 ![GitHub repo size](https://img.shields.io/github/repo-size/jadhielv/flutter-workshop)
 ![GitHub stars](https://img.shields.io/github/stars/jadhielv/flutter-workshop?style=social)
-[![GitHub followers](https://img.shields.io/github/followers/jadhielv.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/jadhielv?tab=followers)
 [![Twitter Follow](https://img.shields.io/twitter/follow/jadhielv?style=social)](https://twitter.com/intent/follow?screen_name=jadhielv)
 
 A new Flutter project.
