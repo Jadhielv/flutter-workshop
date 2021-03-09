@@ -32,13 +32,15 @@ class ProductDetailScreen extends StatelessWidget {
           SizedBox(
             height: 30,
           ),
-          RaisedButton(
-              child: FlatButton.icon(
+          ElevatedButton(
+              child: TextButton.icon(
                 label: Text(
                   'Back Home',
                   style: TextStyle(color: Colors.white),
                 ),
-                color: Colors.black,
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.black
+                ),
                 icon: Icon(
                   Icons.home,
                   color: Colors.white,
@@ -50,7 +52,9 @@ class ProductDetailScreen extends StatelessWidget {
                   ModalRoute.withName(HomeScreen.routeName));
                 },
               ),
-              color: Colors.black,
+              style: ElevatedButton.styleFrom(
+                primary: Colors.black
+              ),
               onPressed: () {})
         ],
       )),
